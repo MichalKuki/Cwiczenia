@@ -69,6 +69,38 @@ public class Main extends Application {
         circle2.setRadius(70);
         circle2.setFill(Color.LIME);
 
+        Circle apple = new Circle();
+        apple.setCenterX(100);
+        apple.setCenterY(330);
+        apple.setRadius(15);
+        apple.setFill(Color.RED);
+        apple.setOpacity(0.8);
+
+
+        Circle apple2 = new Circle();
+        apple2.setCenterX(230);
+        apple2.setCenterY(330);
+        apple2.setRadius(15);
+        apple2.setFill(Color.RED);
+        apple2.setOpacity(0.8);
+
+
+
+        Circle apple3 = new Circle();
+        apple3.setCenterX(160);
+        apple3.setCenterY(250);
+        apple3.setRadius(15);
+        apple3.setFill(Color.RED);
+        apple3.setOpacity(0.8);
+
+
+        Circle apple4 = new Circle();
+        apple4.setCenterX(160);
+        apple4.setCenterY(350);
+        apple4.setRadius(15);
+        apple4.setFill(Color.RED);
+        apple4.setOpacity(0.8);
+
 //        Rectangle rectangle1 = new Rectangle();
 //        rectangle1.setX(400);
 //        rectangle1.setY(100);
@@ -88,13 +120,13 @@ public class Main extends Application {
 //        circle.setRadius(50);
 //        circle.setFill(Color.ORANGE);
 
-        Image image = new Image("pobrane.png");
-        ImageView imageView = new ImageView(image);
-        imageView.setX(120);
-        imageView.setY(290);
-        imageView.setFitWidth(60);
-        imageView.setFitHeight(60);
-        imageView.setOpacity(0.3);
+//        Image image = new Image("pobrane.png");
+//        ImageView imageView = new ImageView(image);
+//        imageView.setX(120);
+//        imageView.setY(290);
+//        imageView.setFitWidth(60);
+//        imageView.setFitHeight(60);
+//        imageView.setOpacity(0.3);
 
 
         root.getChildren().add(text);
@@ -105,7 +137,11 @@ public class Main extends Application {
         root.getChildren().add(circle);
         root.getChildren().add(circle1);
         root.getChildren().add(circle2);
-        root.getChildren().add(imageView);
+        root.getChildren().add(apple);
+        root.getChildren().add(apple2);
+        root.getChildren().add(apple3);
+        root.getChildren().add(apple4);
+//        root.getChildren().add(imageView);
         stage.setScene(scene);
         stage.show();
     }
