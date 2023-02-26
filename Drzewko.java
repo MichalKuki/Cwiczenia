@@ -101,6 +101,16 @@ public class Main extends Application {
         apple4.setFill(Color.RED);
         apple4.setOpacity(0.8);
 
+        Rectangle grass = new Rectangle();
+        grass.setX(0);
+        grass.setY(550);
+        grass.setWidth(600);
+        grass.setHeight(50);
+        grass.setFill(Color.SPRINGGREEN);
+        grass.setStrokeWidth(5);
+        grass.setStroke(Color.FORESTGREEN);
+
+
 //        Rectangle rectangle1 = new Rectangle();
 //        rectangle1.setX(400);
 //        rectangle1.setY(100);
@@ -141,6 +151,7 @@ public class Main extends Application {
         root.getChildren().add(apple2);
         root.getChildren().add(apple3);
         root.getChildren().add(apple4);
+        root.getChildren().add(grass);
 //        root.getChildren().add(imageView);
         stage.setScene(scene);
         stage.show();
